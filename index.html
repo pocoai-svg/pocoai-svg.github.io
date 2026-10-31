@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポコAI | AI Animation Portfolio</title>
+  <meta name="description" content="AIを活用してオリジナルアニメを制作するポコAIのポートフォリオ。COLOTEK AIアニメコンテスト Best Story賞、くりえみAIフィルムコンテスト 審査員賞。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top">ポコ<span>AI</span></a>
+    <nav class="nav">
+      <a href="#awards">Awards</a>
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- いちばん上：メインの3本 -->
+    <section class="pickup" aria-label="メイン作品">
+      <div class="ambient" data-ambient aria-hidden="true"></div>
+      <div class="pickup-inner">
+        <p class="pickup-label"><span class="en">Featured Anime</span>オリジナルアニメ作品</p>
+
+        <div class="pickup-main">
+          <div class="player-wrap">
+            <div class="player" data-player></div>
+            <p class="swipe-hint">左右にスワイプでも切り替えられます</p>
+            <div class="selector" data-selector role="tablist" aria-label="作品を選ぶ"></div>
+          </div>
+          <div class="info" data-info aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 自己紹介のひとこと -->
+    <section class="statement">
+      <p class="statement-en">Story, Sound &amp; Characters.</p>
+      <h1 class="statement-title"><span>記憶に残る、</span><span>アニメを。</span></h1>
+      <p class="statement-body">
+        ポコAIは、企画・脚本・演出から映像づくり、音、編集までを手がけるアニメの作り手です。
+        見る人が迷わずに物語を追えるように、映像の流れと物語の組み立てを大切にしています。
+        SFホラーコメディ、ブラックなラブコメ、三つ巴の頭脳戦。ジャンルは違っても、
+        どの作品も、日常のすぐ隣にある少し奇妙な世界を描いています。
+      </p>
+    </section>
+
+    <!-- 数字 -->
+    <section class="stats" aria-label="実績の数字">
+      <div class="stat"><p class="stat-num">2</p><p class="stat-label">AIコンテスト受賞</p></div>
+      <div class="stat"><p class="stat-num">58<small>万回+</small></p><p class="stat-label">YouTube 総再生回数</p></div>
+      <div class="stat"><p class="stat-num">44.7<small>万回</small></p><p class="stat-label">最も見られた動画</p></div>
+      <div class="stat"><p class="stat-num">3<small>本</small></p><p class="stat-label">15〜23分のオリジナルアニメ</p></div>
+      <p class="stats-note">数字は 2026年11月1日時点</p>
+    </section>
+
+    <!-- 受賞 -->
+    <section class="section" id="awards">
+      <h2 class="section-title"><span class="en">Awards</span>受賞歴</h2>
+      <ol class="awards">
+        <li class="award">
+          <p class="award-prize">Best Story賞</p>
+          <div class="award-body">
+            <p class="award-contest">COLOTEK（コロテック）AIアニメコンテスト</p>
+            <p class="award-work">受賞作　オリジナルアニメ『アースジャック』第1話</p>
+            <p class="award-text">世界征服をたくらむ青年と、地球侵略をねらう宇宙人、そして人類。三つの勢力がさぐり合う頭脳戦の物語で、Best Story賞を受賞しました。</p>
+          </div>
+        </li>
+        <li class="award">
+          <p class="award-prize">審査員賞</p>
+          <div class="award-body">
+            <p class="award-contest">くりえみAIフィルムコンテスト</p>
+            <p class="award-work">受賞作　ショートドラマ『たまに逆再生になる彼女』</p>
+            <p class="award-text">彼女がときどき逆再生になる――そんな奇妙な現象を題材にした、タイムスリップもののショートドラマです。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- その他の作品 -->
+    <section class="section" id="works">
+      <h2 class="section-title"><span class="en">AI Visual Series</span>AI再現シリーズ</h2>
+      <p class="section-lead">
+        「もしも」をAIで映像にするシリーズです。300年後の日本、仏教の地獄、未確認生物の動物園。
+        AIだからこそ作れる、架空の世界の映像です。
+      </p>
+      <div class="series" data-series></div>
+
+      <h2 class="section-title sub"><span class="en">Promotion</span>予告・PV</h2>
+      <div class="pv">
+        <div class="pv-text">
+          <p class="tag">PV</p>
+          <h3>ラブ&amp;イーツ 予告編</h3>
+          <p>本編のアニメを、作品の魅力が短い時間で伝わるPV（予告編）に仕立てることもしています。『ラブ&amp;イーツ』では、物語の入り口と作品の空気が伝わるように、約45秒のPVにまとめました。</p>
+        </div>
+        <a class="pv-card" href="https://x.com/AIMETAVISUALS/status/2097264455126327479" target="_blank" rel="noopener" aria-label="ラブ&amp;イーツのPVを X で再生する">
+          <img src="https://pbs.twimg.com/amplify_video_thumb/2097264396104056833/img/yp47ROrIt-_0XJcx.jpg" alt="ラブ&amp;イーツ PV">
+          <span class="mini-play"></span>
+          <span class="pv-card-label">X で再生 ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- プロフィール -->
+    <section class="section" id="about">
+      <h2 class="section-title"><span class="en">About</span>プロフィール</h2>
+      <div class="about">
+        <div class="about-main">
+          <p class="about-name">ポコAI</p>
+          <p class="about-role">AIアニメ制作</p>
+          <p>
+            AIを使って、オリジナルのアニメを作っています。
+            企画と脚本から、映像、音、編集まで、作品づくりの全体を手がけています。
+          </p>
+          <h3 class="about-h">物語と映像の流れ</h3>
+          <p>
+            見ている人が置いていかれない、わかりやすい流れを大切にしています。
+            物語の順番とカットのつながりを一緒に考え、場面が自然に次へつながるように組み立てます。
+          </p>
+          <h3 class="about-h">音</h3>
+          <p>
+            効果音とBGMも、映像と同じくらい大切にしています。
+            場面の空気や、笑いと怖さが来るタイミングを、音でも伝えるようにしています。
+          </p>
+          <h3 class="about-h">キャラクターデザイン</h3>
+          <p>
+            見終わったあとも記憶に残るキャラクターづくりを心がけています。
+            シルエットだけで誰かわかる形。立っているだけで性格や雰囲気が伝わる姿勢。ひと目で覚えられる特徴的なパーツ。
+            この三つを意識して、画面に出てきた瞬間に「あのキャラだ」とわかるデザインを目指しています。
+          </p>
+        </div>
+        <dl class="about-list">
+          <div><dt>担当</dt><dd>企画、脚本、演出、映像生成、音、編集</dd></div>
+          <div><dt>ジャンル</dt><dd>シリアス</dd></div>
+          <div><dt>使っているAI</dt><dd>Seedance、TapNow、Midjourney、Kling AI、ElevenLabs、Suno、ChatGPT など</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="contact-en">Contact</p>
+      <p class="contact-lead">お仕事のご相談・ご感想は、X または YouTube からご連絡ください。</p>
+      <div class="contact-links">
+        <a href="https://x.com/AIMETAVISUALS" target="_blank" rel="noopener"><span class="en">X</span>@AIMETAVISUALS</a>
+        <a href="https://www.youtube.com/@AI-META-VISUALS" target="_blank" rel="noopener"><span class="en">YouTube</span>@AI-META-VISUALS</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© ポコAI</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
